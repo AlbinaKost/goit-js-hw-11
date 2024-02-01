@@ -4,11 +4,11 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-/* @import url('./vite-promo.css'); */
-@import url('./header.css');
+/* @import url('./reset.css');
+@import url('./vite-promo.css'); 
+@import url('./header.css'); */
 
-:root {
+/* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -22,42 +22,43 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-body {
+} */
+
+
+.form-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   height: 100vh;
-  margin: 0;
+  margin-top: 20px;
 }
 
-form {
-  text-align: center;
-  padding: 20px;
+/* Стилі для форми */
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+}
+
+/* Стилі для інпута у формі */
+.form input {
+  flex: 1;
+  padding: 7px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
+  border-radius: 5px 0 0 5px;
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input[type="text"] {
-  width: 200px;
-  padding: 8px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
+/* Стилі для кнопки у формі */
+.form .btn-submit {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
   background-color: #4E75FF;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 3px;
+  color: #fff;
   cursor: pointer;
-  
+}
+.btn-submit:hover {
+  background-color: #6C8CFF;
 }
